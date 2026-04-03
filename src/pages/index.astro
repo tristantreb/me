@@ -7,7 +7,7 @@ import DroneGallery from '../components/DroneGallery.astro';
   <main>
     <!-- ═══════════════════ HEADER ═══════════════════ -->
     <header class="header">
-      <p class="intro reveal">Hi, I'm Tristan.</p>
+      <h1 class="name">Tristan Trebaol</h1>
     </header>
 
     <!-- ═══════════════════ AI / MODELLING ═══════════════════ -->
@@ -16,7 +16,7 @@ import DroneGallery from '../components/DroneGallery.astro';
 
       <div class="content-block">
         <p>
-          I have a long standing interest in developing models that are grounded in physics. I did my PhD at <strong>Floto lab</strong> working on augmenting home-monitoring data with medical knowledge to improve life expectancy and wellbeing in cystic fibrosis (<a href="https://drive.google.com/file/u/2/d/1KzY6G1w7RWFxa7MzYBQC_WszzzMhRmTT/view?usp=sharing">manuscript</a>).
+          Hi, I'm Tristan. I'm interested in physics-based modelling. I did my PhD at <strong>Floto lab</strong> working on augmenting home-monitoring data with medical knowledge to improve life expectancy and wellbeing in cystic fibrosis (<a href="https://drive.google.com/file/u/2/d/1KzY6G1w7RWFxa7MzYBQC_WszzzMhRmTT/view?usp=sharing">manuscript</a>).
         </p>
       </div>
 
@@ -182,16 +182,16 @@ import DroneGallery from '../components/DroneGallery.astro';
 
   /* ── Header ── */
   .header {
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-md);
     padding-top: var(--space-md);
   }
 
-  .intro {
+  .name {
     font-family: var(--font-serif);
-    font-size: 1.5rem;
-    font-style: italic;
+    font-size: 1.75rem;
+    font-weight: 400;
     color: var(--color-text);
-    line-height: 1.4;
+    line-height: 1.3;
   }
 
   /* ── Sections ── */
@@ -308,11 +308,11 @@ import DroneGallery from '../components/DroneGallery.astro';
     }
 
     .header {
-      margin-bottom: var(--space-md);
+      margin-bottom: var(--space-sm);
     }
 
-    .intro {
-      font-size: 1.3rem;
+    .name {
+      font-size: 1.5rem;
     }
 
     .section {
