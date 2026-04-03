@@ -1,0 +1,741 @@
+{
+  "workspaces": {
+    "Gitstart Growth": {
+      "main": {
+        "id": "55bedc5c3bd762ab",
+        "type": "split",
+        "children": [
+          {
+            "id": "1b05ebfc56958ccc",
+            "type": "leaf",
+            "dimension": 30.790734824281152,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming.md",
+                "mode": "source"
+              }
+            }
+          },
+          {
+            "id": "f7cfd93242bacc6c",
+            "type": "split",
+            "dimension": 38.019169329073485,
+            "children": [
+              {
+                "id": "b0f1266f59a25b87",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "How to ramp up fast at gitstart.md",
+                    "mode": "source"
+                  }
+                }
+              },
+              {
+                "id": "42865679bbe643fe",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "My Objectives at Gitstart.md",
+                    "mode": "source"
+                  }
+                }
+              }
+            ],
+            "direction": "horizontal"
+          },
+          {
+            "id": "5192315fe44b602e",
+            "type": "split",
+            "dimension": 31.190095846645367,
+            "children": [
+              {
+                "id": "b1a3b3549d43ac56",
+                "type": "leaf",
+                "dimension": 24.83349191246432,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Weekly introspection.md",
+                    "mode": "source"
+                  }
+                }
+              },
+              {
+                "id": "c9672740ec547718",
+                "type": "leaf",
+                "dimension": 31.208372978116078,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Siwek.md",
+                    "mode": "source"
+                  }
+                }
+              },
+              {
+                "id": "8bd6633688e7c136",
+                "type": "leaf",
+                "dimension": 43.9581351094196,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Hamza.md",
+                    "mode": "source"
+                  }
+                }
+              }
+            ],
+            "direction": "horizontal"
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "368f694e19a901d8",
+        "type": "split",
+        "children": [
+          {
+            "id": "3d54d847e1146b26",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "d908b431d8ed837a",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {}
+                }
+              },
+              {
+                "id": "9e4d0fb5d06b48fd",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "improve",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": true,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "horizontal",
+        "width": 392.0136413574219,
+        "collapsed": true
+      },
+      "right": {
+        "id": "6275fb944cdea77d",
+        "type": "split",
+        "children": [
+          {
+            "id": "29ca23e485e162db",
+            "type": "tabs",
+            "dimension": 33.21769297484822,
+            "children": [
+              {
+                "id": "cb044e9865861026",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Programming.md",
+                    "collapseAll": true,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "6ed74b42d3ced249",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "Programming.md"
+                  }
+                }
+              },
+              {
+                "id": "c09bc57221c0ba17",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 1
+          },
+          {
+            "id": "60ff6d00acb75d95",
+            "type": "tabs",
+            "dimension": 33.82480485689506,
+            "children": [
+              {
+                "id": "a0dbf37e499ea162",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_TODO.md",
+                    "mode": "preview"
+                  }
+                }
+              },
+              {
+                "id": "dadc9602e1019234",
+                "type": "leaf",
+                "state": {
+                  "type": "todo",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 1
+          },
+          {
+            "id": "a8304b6d15e086b4",
+            "type": "tabs",
+            "dimension": 32.95750216825672,
+            "children": [
+              {
+                "id": "8e79914dd31bc8c9",
+                "type": "leaf",
+                "state": {
+                  "type": "graph",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 258.3484802246094
+      },
+      "active": "b1a3b3549d43ac56"
+    },
+    "Them": {
+      "main": {
+        "id": "55bedc5c3bd762ab",
+        "type": "split",
+        "children": [
+          {
+            "id": "3ceaa9761e411fd7",
+            "type": "split",
+            "children": [
+              {
+                "id": "f519cbec4568ad5e",
+                "type": "tabs",
+                "dimension": 54.166666666666664,
+                "children": [
+                  {
+                    "id": "55e197f157c72e87",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "10.2022 Antonia & Harry's feedback about me.md",
+                        "mode": "source",
+                        "source": false
+                      }
+                    }
+                  },
+                  {
+                    "id": "d66c596a3e045cd0",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Erlangende Weisheit.md",
+                        "mode": "source",
+                        "source": false
+                      }
+                    }
+                  },
+                  {
+                    "id": "bf469398194938da",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Ideal future life plan.md",
+                        "mode": "preview",
+                        "source": false
+                      }
+                    }
+                  }
+                ],
+                "currentTab": 1
+              },
+              {
+                "id": "79b9460a0fa609ae",
+                "type": "tabs",
+                "dimension": 45.83333333333333,
+                "children": [
+                  {
+                    "id": "234e81f5931cc49d",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "_TODO.md",
+                        "mode": "source",
+                        "source": false
+                      }
+                    }
+                  }
+                ]
+              }
+            ],
+            "direction": "horizontal"
+          },
+          {
+            "id": "9b7e8427436f9cd4",
+            "type": "split",
+            "children": [
+              {
+                "id": "d22f0021746011be",
+                "type": "tabs",
+                "children": [
+                  {
+                    "id": "4b8fcf980695f5b5",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Je t'admire pour ... Marc Aurèle.md",
+                        "mode": "source",
+                        "source": false
+                      }
+                    }
+                  },
+                  {
+                    "id": "ee7d499f49390923",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "10.2022 Antonia & Harry's feedback about me.md",
+                        "mode": "source",
+                        "source": false
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "f77ee9f139875a2b",
+                "type": "tabs",
+                "children": [
+                  {
+                    "id": "d1c48ffadeba4f0c",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Languages of love.md",
+                        "mode": "source",
+                        "source": false
+                      }
+                    }
+                  }
+                ]
+              }
+            ],
+            "direction": "horizontal"
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "368f694e19a901d8",
+        "type": "split",
+        "children": [
+          {
+            "id": "3d54d847e1146b26",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "d908b431d8ed837a",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "9e4d0fb5d06b48fd",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "tag:#decision",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": true,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "horizontal",
+        "width": 392.0136413574219,
+        "collapsed": true
+      },
+      "right": {
+        "id": "6275fb944cdea77d",
+        "type": "split",
+        "children": [
+          {
+            "id": "29ca23e485e162db",
+            "type": "tabs",
+            "dimension": 33.26713008937438,
+            "children": [
+              {
+                "id": "cb044e9865861026",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Je t'admire pour ... Marc Aurèle.md",
+                    "collapseAll": true,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "6ed74b42d3ced249",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "Je t'admire pour ... Marc Aurèle.md"
+                  }
+                }
+              },
+              {
+                "id": "c09bc57221c0ba17",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 1
+          },
+          {
+            "id": "60ff6d00acb75d95",
+            "type": "tabs",
+            "dimension": 33.76365441906653,
+            "children": [
+              {
+                "id": "a0dbf37e499ea162",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_TODO.md",
+                    "mode": "preview",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "dadc9602e1019234",
+                "type": "leaf",
+                "state": {
+                  "type": "todo",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 1
+          },
+          {
+            "id": "a8304b6d15e086b4",
+            "type": "tabs",
+            "dimension": 32.96921549155908,
+            "children": [
+              {
+                "id": "8e79914dd31bc8c9",
+                "type": "leaf",
+                "state": {
+                  "type": "graph",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 351.5
+      },
+      "active": "4b8fcf980695f5b5"
+    },
+    "Apply Yourself To The World": {
+      "main": {
+        "id": "55bedc5c3bd762ab",
+        "type": "split",
+        "children": [
+          {
+            "id": "46c52a08360dcad1",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "10088c7cf3650038",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Principles.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "d310f072099ba207",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "5c60ef6172644137",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "La recherche du moi, mes valeurs, ma personnalité 2023.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "f6b8ab8ee40a0ef1",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "d4129bbb4d2b41d9",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_TODO.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "368f694e19a901d8",
+        "type": "split",
+        "children": [
+          {
+            "id": "3d54d847e1146b26",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "d908b431d8ed837a",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "9e4d0fb5d06b48fd",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "gendre",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": true,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "ffa1c8677335c9b4",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "horizontal",
+        "width": 275.5,
+        "collapsed": true
+      },
+      "right": {
+        "id": "6275fb944cdea77d",
+        "type": "split",
+        "children": [
+          {
+            "id": "29ca23e485e162db",
+            "type": "tabs",
+            "dimension": 48.00741427247451,
+            "children": [
+              {
+                "id": "cb044e9865861026",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Principles.md",
+                    "collapseAll": true,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "6ed74b42d3ced249",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "Principles.md"
+                  }
+                }
+              },
+              {
+                "id": "c09bc57221c0ba17",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {}
+                }
+              },
+              {
+                "id": "ad71abdf4d9a9eaf",
+                "type": "leaf",
+                "state": {
+                  "type": "git-view",
+                  "state": {}
+                }
+              },
+              {
+                "id": "23b0b563909a4517",
+                "type": "leaf",
+                "state": {
+                  "type": "all-properties",
+                  "state": {
+                    "sortOrder": "frequency"
+                  }
+                }
+              }
+            ],
+            "currentTab": 1
+          },
+          {
+            "id": "60ff6d00acb75d95",
+            "type": "tabs",
+            "dimension": 19.091751621872106,
+            "children": [
+              {
+                "id": "a0dbf37e499ea162",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_TODO.md",
+                    "mode": "preview",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "dadc9602e1019234",
+                "type": "leaf",
+                "state": {
+                  "type": "todo",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 1
+          },
+          {
+            "id": "a8304b6d15e086b4",
+            "type": "tabs",
+            "dimension": 32.90083410565338,
+            "children": [
+              {
+                "id": "8e79914dd31bc8c9",
+                "type": "leaf",
+                "state": {
+                  "type": "graph",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 271.5,
+        "collapsed": true
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "switcher:Open quick switcher": true,
+          "graph:Open graph view": true,
+          "canvas:Create new canvas": false,
+          "templates:Insert template": false,
+          "command-palette:Open command palette": false,
+          "markdown-importer:Open format converter": false,
+          "audio-recorder:Start/stop recording": false,
+          "workspaces:Manage workspace layouts": false
+        }
+      },
+      "active": "10088c7cf3650038"
+    }
+  },
+  "active": "Gitstart Growth"
+}

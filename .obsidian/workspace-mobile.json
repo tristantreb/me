@@ -1,0 +1,213 @@
+{
+  "main": {
+    "id": "55bedc5c3bd762ab",
+    "type": "split",
+    "children": [
+      {
+        "id": "18e26461d8f7a3e5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4b53a767bd6f5316",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post PhD - 2024-2025.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Post PhD - 2024-2025"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6a5cfcb371cf767b",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "3973b9a55d76a5e0",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-folder-closed",
+          "title": "Files"
+        }
+      },
+      {
+        "id": "b494e1ce0b8e7966",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "tag:#graisse",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "Search"
+        }
+      },
+      {
+        "id": "cb20dcedabd17ca0",
+        "type": "leaf",
+        "state": {
+          "type": "starred",
+          "state": {},
+          "icon": "lucide-ghost",
+          "title": "starred"
+        }
+      },
+      {
+        "id": "87fd3ebf00d9feae",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "Bookmarks"
+        }
+      },
+      {
+        "id": "d731ff39103382ed",
+        "type": "leaf",
+        "state": {
+          "type": "all-properties",
+          "state": {
+            "sortOrder": "frequency",
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-archive",
+          "title": "All properties"
+        }
+      }
+    ],
+    "currentTab": 1
+  },
+  "right": {
+    "id": "535462224d6fc183",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "19731789c81eecb8",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Vila - Lucien + Heidi.md",
+            "collapseAll": true,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-coming-in",
+          "title": "Backlinks"
+        }
+      },
+      {
+        "id": "05d459066d1658af",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "Post PhD - 2024-2025.md",
+            "followCursor": false,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-list",
+          "title": "Outline"
+        }
+      },
+      {
+        "id": "7b9468c4d7cbbbd1",
+        "type": "leaf",
+        "state": {
+          "type": "calendar",
+          "state": {},
+          "icon": "lucide-ghost",
+          "title": "calendar"
+        }
+      }
+    ],
+    "currentTab": 1
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "audio-recorder:Start/stop recording": false,
+      "workspaces:Manage workspace layouts": false
+    }
+  },
+  "active": "4b53a767bd6f5316",
+  "lastOpenFiles": [
+    "Ski.md",
+    "Elegance homme - aventure sartoriale.md",
+    "cam caps.md",
+    "La Breizh Rave.md",
+    "Cambridge.md",
+    "Daily.md",
+    "Amis.md",
+    "Madeleine.md",
+    "Lisez la vie des saints.md",
+    "Foi - Spirituality.md",
+    "P Goujon - dépouillement, vive l'Angleterre, pas trop de grâce svp,  xp de grâce pdt la commande de livres - 06.01.2025.md",
+    "09.2024 Cochin.md",
+    "CF.md",
+    "Consultations.md",
+    "_TODO.md",
+    "12.04.2023 1ere exacerbation pulmonaire sous Kaftrio.md",
+    "Léa Moret - Kaftrio - documentaire muco post trikafta.md",
+    "Morning dress coat Jones Chalk an Dawston.md",
+    "Dressing.md",
+    "Suitsupply gris anthracite 11.2022.md",
+    "Syndrome occlusif.md",
+    "Lien sensibilité spirituelle et émotionnelle, transfert de sensibilité spirituelle, grâce rituelle - Madeleine - 09.02.2025.md",
+    "final speech.md",
+    "Gitstart Analytics.md",
+    "Rêves.md",
+    "The Big Hoof Burn's night speech - 01.2025.md",
+    "attachments/Lettre Antonia.pdf",
+    "attachments/White tie.png",
+    "attachments/Pasted image 20231223003753.png",
+    "attachments/Pasted image 20231223003052.png",
+    "attachments/Pasted image 20231219002441.png",
+    "attachments/Pasted image 20231219002739.png",
+    "attachments/Pasted image 20231219002801.png",
+    "attachments/Lettre d'Antonia 17.05.2023.pdf",
+    "attachments/Pasted image 20231016130858.png",
+    "attachments/Typical crossed transactions.png",
+    "attachments/Pasted image 20230911164828.png",
+    "attachments/Pasted image 20230911163412.png",
+    "attachments/Questionnaire_fiances.pdf",
+    "attachments/Réponse d'Antonia.pdf",
+    "attachments/Dad Mam Foi.pdf",
+    "attachments/Recording 20220221212653.webm",
+    "attachments/Recording 20220221212041.webm",
+    "attachments/IMG_5623.heic",
+    "attachments/IMG_5617.heic",
+    "attachments/IMG_5618 1.heic",
+    "Untitled 1.canvas"
+  ]
+}

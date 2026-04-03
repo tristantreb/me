@@ -1,0 +1,25 @@
+{
+  "todoPageName": "todo",
+  "showChecked": false,
+  "autoRefresh": true,
+  "subGroups": false,
+  "groupBy": "page",
+  "sortDirectionItems": "new->old",
+  "sortDirectionGroups": "new->old",
+  "sortDirectionSubGroups": "new->old",
+  "includeFiles": "",
+  "lookAndFeel": "classic",
+  "_collapsedSections": [
+    "Syndrome occlusif.md",
+    "Nutrition.md",
+    "Consultations.md",
+    "Anna Queens' Reverend - 21.11.2023.md",
+    "Anna Queens' Reverend - purpose of a religions,  - 21-28.11.2023.md",
+    "Anna Queens' Reverend - why I am catholic, other religions, Anna mass' habits, xp with God - 21-28.11.2023.md",
+    "Sophie et la foi catholique 10.2022.md",
+    "Startup.md",
+    "Daily.md",
+    "Obsidian set up.md"
+  ],
+  "_hiddenTags": []
+}

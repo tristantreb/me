@@ -1,0 +1,10 @@
+{
+  "baseFontSize": 18,
+  "translucency": false,
+  "cssTheme": "Minimal",
+  "theme": "moonstone",
+  "accentColor": "#4b6bec",
+  "showViewHeader": false,
+  "nativeMenus": true,
+  "baseFontSizeAction": false
+}
