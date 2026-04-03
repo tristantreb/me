@@ -1,0 +1,224 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Personal page of Tristan Trebaol" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <slot />
+
+    <style is:global>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --color-bg: #faf9f6;
+        --color-bg-warm: #f5f3ee;
+        --color-text: #2c2c2c;
+        --color-text-light: #6b6560;
+        --color-text-lighter: #9a938c;
+        --color-accent: #c45d3e;
+        --color-accent-hover: #a8492e;
+        --color-card-bg: #f0efe9;
+        --color-card-border: #e2dfd6;
+        --color-card-hover: #e8e6de;
+        --color-code-bg: #2d2a2e;
+        --color-code-text: #f8f8f2;
+        --color-ink: #8b5e3c;
+        --font-serif: 'Instrument Serif', Georgia, serif;
+        --font-sans: 'Source Sans 3', 'Segoe UI', sans-serif;
+        --measure: 650px;
+        --space-xs: 0.5rem;
+        --space-sm: 1rem;
+        --space-md: 1.75rem;
+        --space-lg: 3rem;
+        --space-xl: 5rem;
+        --space-2xl: 8rem;
+      }
+
+      html {
+        font-size: 18px;
+        scroll-behavior: smooth;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      body {
+        font-family: var(--font-sans);
+        font-weight: 300;
+        color: var(--color-text);
+        background-color: var(--color-bg);
+        line-height: 1.72;
+        letter-spacing: 0.01em;
+        position: relative;
+      }
+
+      /* Paper grain overlay */
+      .grain {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 9999;
+        opacity: 0.03;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      }
+
+      h2 {
+        font-family: var(--font-serif);
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 1.2;
+        color: var(--color-text);
+        margin-bottom: var(--space-md);
+        letter-spacing: -0.01em;
+      }
+
+      p {
+        margin-bottom: var(--space-sm);
+      }
+
+      a {
+        color: var(--color-accent);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: border-color 0.2s ease;
+      }
+
+      a:hover {
+        border-bottom-color: var(--color-accent);
+      }
+
+      strong {
+        font-weight: 600;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      /* Fade-in on scroll */
+      .reveal {
+        opacity: 0;
+        transform: translateY(16px);
+        transition: opacity 0.7s cubic-bezier(0.25, 0.1, 0.25, 1),
+          transform 0.7s cubic-bezier(0.25, 0.1, 0.25, 1);
+      }
+
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Stagger children */
+      .reveal-stagger > * {
+        opacity: 0;
+        transform: translateY(12px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+      }
+
+      .reveal-stagger.visible > *:nth-child(1) { transition-delay: 0s; }
+      .reveal-stagger.visible > *:nth-child(2) { transition-delay: 0.08s; }
+      .reveal-stagger.visible > *:nth-child(3) { transition-delay: 0.16s; }
+      .reveal-stagger.visible > *:nth-child(4) { transition-delay: 0.24s; }
+      .reveal-stagger.visible > *:nth-child(5) { transition-delay: 0.32s; }
+      .reveal-stagger.visible > *:nth-child(6) { transition-delay: 0.4s; }
+
+      .reveal-stagger.visible > * {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Code block */
+      pre {
+        background: var(--color-code-bg);
+        color: var(--color-code-text);
+        padding: var(--space-sm) var(--space-md);
+        border-radius: 8px;
+        overflow-x: auto;
+        font-size: 0.82rem;
+        line-height: 1.6;
+        margin: var(--space-sm) 0;
+        font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+      }
+
+      pre code {
+        color: inherit;
+        background: none;
+        padding: 0;
+        border: none;
+        font-size: inherit;
+      }
+
+      code {
+        font-family: 'SF Mono', 'Fira Code', monospace;
+        font-size: 0.88em;
+        background: var(--color-card-bg);
+        padding: 0.15em 0.4em;
+        border-radius: 4px;
+        border: 1px solid var(--color-card-border);
+      }
+
+      /* Syntax highlighting colors */
+      .kw { color: #ff6188; }
+      .str { color: #ffd866; }
+      .cm { color: #727072; font-style: italic; }
+      .fn { color: #a9dc76; }
+      .cls { color: #78dce8; }
+
+      @media (max-width: 720px) {
+        html {
+          font-size: 16px;
+        }
+
+        h2 {
+          font-size: 1.65rem;
+        }
+      }
+    </style>
+
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+            }
+          });
+        },
+        { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+      );
+
+      document.querySelectorAll('.reveal, .reveal-stagger').forEach((el) => {
+        observer.observe(el);
+      });
+    </script>
+  </body>
+</html>
