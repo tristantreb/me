@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import LinkCard from '../components/LinkCard.astro';
 import DroneGallery from '../components/DroneGallery.astro';
 ---
 
@@ -8,40 +7,6 @@ import DroneGallery from '../components/DroneGallery.astro';
   <main>
     <!-- ═══════════════════ HEADER ═══════════════════ -->
     <header class="header">
-      <svg class="signature" viewBox="0 0 340 90" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Tristan">
-        <!-- Hand-drawn cursive "Tristan" -->
-        <path
-          d="M12 68C12 68 18 14 22 12C26 10 14 70 28 42C42 14 38 62 48 38C52 28 46 52 56 34C60 26 54 46 64 32C68 26 62 44 72 28C82 12 76 42 86 30C90 24 84 38 92 26"
-          stroke="var(--color-ink)"
-          stroke-width="2.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          fill="none"
-          class="signature-path"
-        />
-        <!-- "T" crossbar -->
-        <path
-          d="M6 22C14 18 30 16 34 18"
-          stroke="var(--color-ink)"
-          stroke-width="2"
-          stroke-linecap="round"
-          fill="none"
-          class="signature-path"
-        />
-        <!-- Underline flourish -->
-        <path
-          d="M8 72C30 78 60 76 96 60"
-          stroke="var(--color-ink)"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          fill="none"
-          class="signature-path"
-          opacity="0.5"
-        />
-        <!-- Full name in handwriting style -->
-        <text x="108" y="55" font-family="'Instrument Serif', Georgia, serif" font-style="italic" font-size="32" fill="var(--color-ink)" opacity="0.85">Tristan</text>
-      </svg>
-
       <p class="intro reveal">Hi, I'm Tristan.</p>
     </header>
 
@@ -51,24 +16,14 @@ import DroneGallery from '../components/DroneGallery.astro';
 
       <div class="content-block">
         <p>
-          <img src="/logos/cambridge.svg" alt="Cambridge University" class="inline-logo" />
-          I have a long standing interest in developing models that are grounded in physics. I did my PhD at <strong>Floto lab</strong> working on augmenting home-monitoring data with medical knowledge to improve life expectancy and wellbeing in cystic fibrosis.
+          I have a long standing interest in developing models that are grounded in physics. I did my PhD at <strong>Floto lab</strong> working on augmenting home-monitoring data with medical knowledge to improve life expectancy and wellbeing in cystic fibrosis (<a href="https://drive.google.com/file/u/2/d/1KzY6G1w7RWFxa7MzYBQC_WszzzMhRmTT/view?usp=sharing">manuscript</a>).
         </p>
-
-        <div class="cards-row reveal-stagger">
-          <LinkCard href="https://drive.google.com/file/u/2/d/1KzY6G1w7RWFxa7MzYBQC_WszzzMhRmTT/view?usp=sharing" emoji="📄" label="Manuscript" />
-          <LinkCard href="#" emoji="📚" label="Favourite papers" comingSoon />
-        </div>
       </div>
 
       <div class="content-block reveal">
         <p>
-          Developed a recursive version of belief propagation that was <strong>20x faster</strong>. It's available on PGMPY.
+          Developed a recursive version of belief propagation that was <strong>20x faster</strong>. It's available on <a href="https://pgmpy.org/_modules/pgmpy/inference/ExactInference.html#BeliefPropagationWithMessagePassing">PGMPY</a>.
         </p>
-
-        <div class="cards-row">
-          <LinkCard href="https://pgmpy.org/_modules/pgmpy/inference/ExactInference.html#BeliefPropagationWithMessagePassing" emoji="🔗" label="PGMPY" />
-        </div>
 
         <pre><code><span class="kw">class</span> <span class="cls">_RecursiveMessageSchedulingQuery</span>:
 <span class="cm">    """Private class used in `BeliefPropagationWithMessagePassing.query()`</span>
@@ -79,19 +34,14 @@ import DroneGallery from '../components/DroneGallery.astro';
 
       <div class="content-block reveal">
         <p>
-          I co-invented a geodesic CNN commercially used at
-          <img src="/logos/neural-concept.svg" alt="Neural Concept" class="inline-logo inline-logo--wide" />.
+          I co-invented a geodesic CNN commercially used at <a href="https://www.neuralconcept.com/">Neural Concept</a>.
         </p>
       </div>
 
       <div class="content-block reveal">
         <p>
-          I read <a href="https://people.inf.ethz.ch/omutlu/pub/gaia-geo-distributed-ML-at-LAN-speed_nsdi17.pdf">a paper</a> which got me interested in <strong>geo-distributed learning</strong> and built an API to monitor the cost of the computing infrastructure. Talked at ASTHM conference and gave seminar lessons at South East Georgia University school of statistics.
+          I read <a href="https://people.inf.ethz.ch/omutlu/pub/gaia-geo-distributed-ML-at-LAN-speed_nsdi17.pdf">this paper</a> which got me interested in <strong>geo-distributed learning</strong> and built an API to monitor the cost of the computing infrastructure. I talked about the paper at ASTHM conference and gave seminar lessons at South East Georgia University school of statistics.
         </p>
-
-        <div class="cards-row">
-          <LinkCard href="https://people.inf.ethz.ch/omutlu/pub/gaia-geo-distributed-ML-at-LAN-speed_nsdi17.pdf" emoji="📄" label="The reading that sparked my interest" />
-        </div>
       </div>
     </section>
 
@@ -101,14 +51,8 @@ import DroneGallery from '../components/DroneGallery.astro';
 
       <div class="content-block">
         <p>
-          <img src="/logos/gitstart.svg" alt="Gitstart" class="inline-logo inline-logo--wide" />
-          I've been writing fullstack code at <strong>Gitstart</strong> <span class="tag">YC19</span>. I journaled my daily learnings for a year. I also shipped a few open-source contributions.
+          I've been writing fullstack code at <a href="https://gitstart.com/">Gitstart</a> (YC19). I journaled <a href="https://www.notion.so/tristantrebaol/Daily-Tristan-4bf8daf9da3b45b89b9145c863ca92c8?source=copy_link">my daily learnings</a> for a year. I also shipped <a href="https://www.notion.so/tristantrebaol/Daily-Tristan-4bf8daf9da3b45b89b9145c863ca92c8?source=copy_link#dc2368fef3dd44d4826740b1eab03e6a">open-source contributions</a> in a hectic week, totaling 150 commits (pre-AI coding times).
         </p>
-
-        <div class="cards-row reveal-stagger">
-          <LinkCard href="https://www.notion.so/tristantrebaol/Daily-Tristan-4bf8daf9da3b45b89b9145c863ca92c8?source=copy_link" emoji="📓" label="Daily journal" />
-          <LinkCard href="https://www.notion.so/tristantrebaol/Daily-Tristan-4bf8daf9da3b45b89b9145c863ca92c8?source=copy_link#dc2368fef3dd44d4826740b1eab03e6a" emoji="🔗" label="Open-source contributions" />
-        </div>
 
         <figure class="photo reveal">
           <img src="/images/gitpraise.png" alt="Gitpraise screenshot" loading="lazy" />
@@ -117,71 +61,40 @@ import DroneGallery from '../components/DroneGallery.astro';
 
       <div class="content-block reveal">
         <p>
-          I realised that TDD is drastically underrated. Also enjoyed reading: <em>The Missing README</em>, <em>The Pragmatic Engineer</em>, <em>Normal Accidents</em>.
+          I realised that <a href="https://www.notion.so/tristantrebaol/TDD-is-drastically-underrated-0fde747cad4b4a8c9a3b48187192ea92?source=copy_link">TDD is drastically underrated</a>. Also enjoyed reading: <em>The Missing README</em>, <em>The Pragmatic Engineer</em>, <em>Normal Accidents</em>.
         </p>
-
-        <div class="cards-row">
-          <LinkCard href="https://www.notion.so/tristantrebaol/TDD-is-drastically-underrated-0fde747cad4b4a8c9a3b48187192ea92?source=copy_link" emoji="📝" label="TDD is drastically underrated" />
-        </div>
       </div>
 
       <div class="content-block reveal">
         <p>
-          This all started in 2014 when I took
-          <span class="cs50-badge">
-            <img src="/logos/cs50.svg" alt="CS50" class="cs50-shield" />
-            <span>CS50</span>
-          </span>
-          with two other high school classmates.
+          Started coding at 17 when I undertook CS50 (Harvard CS) with two other high school classmates.
         </p>
       </div>
     </section>
 
-    <!-- ═══════════════════ ROBOTS ═══════════════════ -->
+    <!-- ═══════════════════ ROBOTS / HARDWARE ═══════════════════ -->
     <section class="section reveal">
-      <h2>Robots</h2>
+      <h2>Robots / Hardware</h2>
 
       <div class="content-block">
         <p>
-          <img src="/logos/epfl-spacecraft.svg" alt="EPFL Spacecraft Team" class="inline-logo" />
-          I started a space mission from my kitchen table in Lausanne with my two best friends. We raised <strong>2.5M CHF</strong> from
-          <img src="/logos/esa.svg" alt="ESA" class="inline-logo inline-logo--wide" />
-          and launched two satellites.
+          I started a <a href="https://www.epflspacecraftteam.ch/">space mission</a> from my kitchen table in Lausanne with my two best friends. We raised <strong>2.5M CHF</strong> from the European Space Agency and launched two satellites. I spoke about it on <a href="https://open.spotify.com/episode/06ThLys4c7i8pEowlWxvpR?si=c6652ddb1d0e4131">radio</a>, in an <a href="https://actu.epfl.ch/news/epfl-moves-boldly-into-space-with-its-chess-satell/">article</a>, and on <a href="https://youtu.be/OPOPqDzs0KE?t=133">video</a>. Team's efforts led to <a href="https://www.dphispace.com/">DPhi Space</a> spin-off — the team is still active, next launch planned October 2026.
         </p>
-
-        <div class="cards-row reveal-stagger">
-          <LinkCard href="https://actu.epfl.ch/news/epfl-moves-boldly-into-space-with-its-chess-satell/" emoji="📰" label="Article" />
-          <LinkCard href="https://open.spotify.com/episode/06ThLys4c7i8pEowlWxvpR?si=c6652ddb1d0e4131" emoji="🎙" label="Radio" />
-          <LinkCard href="https://youtu.be/OPOPqDzs0KE?t=133" emoji="🎬" label="EPFL promo video" />
-        </div>
-
-        <p class="spinoff reveal">
-          <img src="/logos/dphi-space.svg" alt="DPhi Space" class="inline-logo inline-logo--wide" />
-          Team's efforts led to <strong>DPhi Space</strong> spin-off. The team is still active — next launch planned October 2026.
-        </p>
-
-        <div class="cards-row">
-          <LinkCard href="https://www.dphispace.com/" emoji="🚀" label="DPhi Space" />
-        </div>
       </div>
 
       <div class="content-block reveal">
         <p>
-          I spent 3 years part-time building floating drones in EPFL makerspace. We built the <strong>first RC bifoiler worldwide</strong>. It was the fastest boat in the circuit history in the international student competition, and I was lucky enough to pilot a few races.
+          I spent 3 years part-time building floating drones in EPFL makerspace. We built the <a href="https://www.youtube.com/watch?v=TFE88LYaePM">first RC bifoiler worldwide</a> (picture below). It was the fastest boat in the circuit history in the international student competition, and I was lucky enough to pilot a few races.
         </p>
 
-        <div class="cards-row">
-          <LinkCard href="https://www.youtube.com/watch?v=TFE88LYaePM" emoji="🎬" label="Bifoiler video" />
-        </div>
-
-        <figure class="photo reveal">
+        <figure class="photo">
           <img src="/images/bifoiler.png" alt="The RC bifoiler — first of its kind" loading="lazy" />
         </figure>
       </div>
 
       <div class="content-block reveal">
         <p>
-          We also built a freight boat prototype that won the <strong>heavyweight category</strong>.
+          We also built a freight boat prototype that carried 200 kg of weight.
         </p>
         <figure class="photo">
           <img src="/images/freight-boat.png" alt="Freight boat prototype" loading="lazy" />
@@ -211,14 +124,14 @@ import DroneGallery from '../components/DroneGallery.astro';
         </li>
         <li class="cf-timeline__item reveal">
           <span class="cf-timeline__year">2021</span>
-          <span class="cf-timeline__desc">Crossed the Léman lake</span>
+          <span class="cf-timeline__desc">Swam across Lake Geneva from Lausanne to Evian</span>
           <figure class="photo">
-            <img src="/images/lake-leman.jpg" alt="Swimming across Lake Léman" loading="lazy" />
+            <img src="/images/lake-leman.jpg" alt="Swimming across Lake Geneva" loading="lazy" />
           </figure>
         </li>
         <li class="cf-timeline__item reveal">
           <span class="cf-timeline__year">2018</span>
-          <span class="cf-timeline__desc">Ironman, second place</span>
+          <span class="cf-timeline__desc">Ran an ironman with my brother — second place for my age category</span>
         </li>
         <li class="cf-timeline__item reveal">
           <span class="cf-timeline__year">2015</span>
@@ -233,32 +146,25 @@ import DroneGallery from '../components/DroneGallery.astro';
 
       <div class="content-block">
         <p>
-          My grandfather taught me how to sail before I could walk. At 15, after 10 years of training, I had passed <strong>10,000 hours</strong> sailing and ended up winning the <strong>world championship</strong> with my brother in pre-olympic series.
+          My father taught me how to sail before I could walk. At 15, after 10 years of training, I had passed <strong>10,000 hours</strong> sailing and ended up winning the <strong>world championship</strong> with my brother in pre-olympic series (<a href="https://www.ouest-france.fr/bretagne/vannes-56000/les-freres-trebaol-champions-du-monde-de-catamaran-724483">article</a>).
         </p>
-
-        <div class="cards-row">
-          <LinkCard href="https://www.ouest-france.fr/bretagne/vannes-56000/les-freres-trebaol-champions-du-monde-de-catamaran-724483" emoji="📰" label="Article" />
-        </div>
       </div>
 
       <div class="content-block reveal">
         <p>
-          <img src="/logos/redbull-foiling.svg" alt="Red Bull Foiling Generation" class="inline-logo inline-logo--wide" />
-          The Red Bull Foiling Generation taught me the hard way how to sail on Flying Phantom. Then joined <strong>Realteam</strong>, <strong>Tixwave</strong> and raced against <strong>Alinghi</strong> in Lake Geneva on ETF26.
+          The French chapter of the <a href="https://www.youtube.com/watch?v=SU0NPu0ALFA&pp=ygUoZnJhbmNlIGZpbmFsZSByZWRidWxsIGZvaWxpbmcgZ2VuZXJhdGlvbtIHCQnZCgGHKiGM7w%3D%3D">Red Bull Foiling Generation</a> taught me <a href="https://www.youtube.com/watch?v=2Baj4WSFOm4">the hard way</a> how to sail on Flying Phantom. Then joined <strong>Realteam</strong>, <strong>Tixwave</strong> and raced against <strong>Alinghi</strong> in Lake Geneva on ETF26 and 69F.
         </p>
 
-        <div class="cards-row reveal-stagger">
-          <LinkCard href="https://www.youtube.com/watch?v=SU0NPu0ALFA&pp=ygUoZnJhbmNlIGZpbmFsZSByZWRidWxsIGZvaWxpbmcgZ2VuZXJhdGlvbtIHCQnZCgGHKiGM7w%3D%3D" emoji="🎬" label="Video" />
-          <LinkCard href="https://www.youtube.com/watch?v=2Baj4WSFOm4" emoji="💥" label="Crash" />
-        </div>
+        <!-- TODO: Add catamaran foiling sailing photo here once available -->
       </div>
     </section>
 
     <!-- ═══════════════════ FOOTER ═══════════════════ -->
     <footer class="footer reveal">
       <div class="footer__cta">say hi</div>
-      <a href="mailto:tristan@trebaol.com" class="footer__email">tristan@trebaol.com</a>
       <nav class="footer__links">
+        <a href="mailto:tristan@trebaol.com">tristan@trebaol.com</a>
+        <span class="footer__dot">&middot;</span>
         <a href="https://github.com/tristantreb" target="_blank" rel="noopener noreferrer">github</a>
         <span class="footer__dot">&middot;</span>
         <a href="https://www.linkedin.com/in/tristan-trebaol/" target="_blank" rel="noopener noreferrer">linkedin</a>
@@ -271,37 +177,18 @@ import DroneGallery from '../components/DroneGallery.astro';
   main {
     max-width: var(--measure);
     margin: 0 auto;
-    padding: var(--space-xl) var(--space-md) var(--space-2xl);
+    padding: var(--space-lg) var(--space-sm) var(--space-xl);
   }
 
   /* ── Header ── */
   .header {
-    margin-bottom: var(--space-2xl);
-    padding-top: var(--space-lg);
-  }
-
-  .signature {
-    width: 220px;
-    height: auto;
     margin-bottom: var(--space-lg);
-    display: block;
-  }
-
-  .signature-path {
-    stroke-dasharray: 400;
-    stroke-dashoffset: 400;
-    animation: draw 2.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-  }
-
-  @keyframes draw {
-    to {
-      stroke-dashoffset: 0;
-    }
+    padding-top: var(--space-md);
   }
 
   .intro {
     font-family: var(--font-serif);
-    font-size: 1.65rem;
+    font-size: 1.5rem;
     font-style: italic;
     color: var(--color-text);
     line-height: 1.4;
@@ -309,8 +196,8 @@ import DroneGallery from '../components/DroneGallery.astro';
 
   /* ── Sections ── */
   .section {
-    margin-bottom: var(--space-2xl);
-    padding-top: var(--space-md);
+    margin-bottom: var(--space-xl);
+    padding-top: var(--space-sm);
     border-top: 1px solid var(--color-card-border);
   }
 
@@ -319,82 +206,21 @@ import DroneGallery from '../components/DroneGallery.astro';
     color: var(--color-text-light);
     margin-top: calc(var(--space-md) * -1);
     margin-bottom: var(--space-md);
-    font-size: 0.95rem;
+    font-size: 0.88rem;
   }
 
   .content-block {
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-md);
   }
 
   .content-block:last-child {
     margin-bottom: 0;
   }
 
-  /* ── Inline logos ── */
-  .inline-logo {
-    display: inline-block;
-    height: 26px;
-    width: auto;
-    vertical-align: middle;
-    margin: 0 0.15em;
-    opacity: 0.85;
-    transition: opacity 0.2s ease;
-  }
-
-  .inline-logo:hover {
-    opacity: 1;
-  }
-
-  .inline-logo--wide {
-    height: 22px;
-  }
-
-  /* ── Tag ── */
-  .tag {
-    display: inline-block;
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--color-accent);
-    background: rgba(196, 93, 62, 0.08);
-    padding: 0.15em 0.55em;
-    border-radius: 4px;
-    vertical-align: middle;
-    margin-left: 0.15em;
-  }
-
-  /* ── CS50 badge ── */
-  .cs50-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35em;
-    background: #A41034;
-    color: #fff;
-    padding: 0.2em 0.7em 0.2em 0.3em;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 0.88em;
-    vertical-align: middle;
-  }
-
-  .cs50-shield {
-    height: 22px;
-    width: auto;
-  }
-
-  /* ── Cards row ── */
-  .cards-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin: var(--space-sm) 0;
-  }
-
   /* ── Photos ── */
   .photo {
-    margin: var(--space-sm) 0;
-    border-radius: 10px;
+    margin: var(--space-xs) 0;
+    border-radius: 8px;
     overflow: hidden;
     border: 1px solid var(--color-card-border);
   }
@@ -404,19 +230,12 @@ import DroneGallery from '../components/DroneGallery.astro';
     display: block;
   }
 
-  /* ── Spinoff callout ── */
-  .spinoff {
-    padding-left: var(--space-md);
-    border-left: 2px solid var(--color-card-border);
-    margin-top: var(--space-sm);
-  }
-
   /* ── CF Timeline ── */
   .cf-timeline {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: var(--space-md);
+    gap: var(--space-sm);
   }
 
   .cf-timeline__item {
@@ -428,7 +247,7 @@ import DroneGallery from '../components/DroneGallery.astro';
 
   .cf-timeline__year {
     font-family: var(--font-serif);
-    font-size: 1.15rem;
+    font-size: 1.05rem;
     color: var(--color-accent);
     min-width: 3.5em;
     flex-shrink: 0;
@@ -447,48 +266,35 @@ import DroneGallery from '../components/DroneGallery.astro';
   /* ── Footer ── */
   .footer {
     text-align: center;
-    padding: var(--space-xl) 0 var(--space-lg);
+    padding: var(--space-lg) 0 var(--space-md);
     border-top: 1px solid var(--color-card-border);
-    margin-top: var(--space-lg);
+    margin-top: var(--space-md);
   }
 
   .footer__cta {
     font-family: var(--font-serif);
     font-style: italic;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     color: var(--color-text-light);
     margin-bottom: var(--space-xs);
   }
 
-  .footer__email {
-    font-size: 1.15rem;
-    font-weight: 400;
+  .footer__links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    font-size: 0.9rem;
+  }
+
+  .footer__links a {
     color: var(--color-accent);
     border-bottom: 1px solid transparent;
     transition: border-color 0.2s ease;
   }
 
-  .footer__email:hover {
-    border-bottom-color: var(--color-accent);
-  }
-
-  .footer__links {
-    margin-top: var(--space-sm);
-    display: flex;
-    justify-content: center;
-    gap: 0.6em;
-    font-size: 0.92rem;
-  }
-
-  .footer__links a {
-    color: var(--color-text-light);
-    border-bottom: 1px solid transparent;
-    transition: all 0.2s ease;
-  }
-
   .footer__links a:hover {
-    color: var(--color-text);
-    border-bottom-color: var(--color-text-light);
+    border-bottom-color: var(--color-accent);
   }
 
   .footer__dot {
@@ -498,23 +304,19 @@ import DroneGallery from '../components/DroneGallery.astro';
   /* ── Responsive ── */
   @media (max-width: 720px) {
     main {
-      padding: var(--space-lg) var(--space-sm) var(--space-xl);
+      padding: var(--space-md) var(--space-xs) var(--space-lg);
     }
 
     .header {
-      margin-bottom: var(--space-xl);
-    }
-
-    .signature {
-      width: 180px;
+      margin-bottom: var(--space-md);
     }
 
     .intro {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
     }
 
     .section {
-      margin-bottom: var(--space-xl);
+      margin-bottom: var(--space-lg);
     }
 
     .cf-timeline__item {
