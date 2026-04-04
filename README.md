@@ -5,3 +5,4 @@
 ## TODO
 - Add "Favourite papers" section in AI/Modelling (coming soon)
 - Add catamaran foiling sailing photo to Sailing section (missing from attachments)
+- Add accordion mode for sections
