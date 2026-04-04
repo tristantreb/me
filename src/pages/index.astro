@@ -4,171 +4,231 @@ import DroneGallery from '../components/DroneGallery.astro';
 ---
 
 <BaseLayout title="Tristan Trébaol">
-  <main>
-    <!-- ═══════════════════ HEADER ═══════════════════ -->
-    <header class="header">
-      <h1 class="name">Tristan Trébaol</h1>
-      <p>Hi, I'm Tristan. I am interested to develop models that are useful in the real world. I also enjoy building hardware. A few things about me:</p>
-    </header>
+  <div class="page-layout">
+    <!-- ═══════════════════ TABLE OF CONTENTS ═══════════════════ -->
+    <nav class="toc" aria-label="Table of contents">
+      <ul>
+        <li><a href="#modelling" class="toc__link">I like modelling</a></li>
+        <li><a href="#code" class="toc__link">I like writing code</a></li>
+        <li><a href="#hardware" class="toc__link">I like building hardware</a></li>
+        <li><a href="#cf" class="toc__link">I like challenging myself</a></li>
+        <li><a href="#sailing" class="toc__link">I like sailing</a></li>
+      </ul>
+    </nav>
 
-    <!-- ═══════════════════ MODELLING ═══════════════════ -->
-    <section class="section reveal">
-      <h2>Modelling</h2>
+    <main>
+      <!-- ═══════════════════ HEADER ═══════════════════ -->
+      <header class="header">
+        <h1 class="name">Tristan Trébaol</h1>
+        <p>Hi, I'm Tristan. I'm a scientist and engineer that builds AI/ML models (Cambridge PhD) and deploys them in production (Gitstart YC19). I also launched two satellites to space and am double sailing world champion.</p>
+      </header>
 
-      <div class="content-block">
-        <p>
-          Lastly, during my PhD at Cambridge I worked on a probabilistic graphical model of lung health to improve life expectancy and wellbeing in cystic fibrosis (<a href="https://drive.google.com/file/u/2/d/1KzY6G1w7RWFxa7MzYBQC_WszzzMhRmTT/view?usp=sharing">manuscript</a>). Whilst doing so I implemented a recursive version of the belief propagation algorithm that was 20x faster than current method on <a href="https://pgmpy.org/_modules/pgmpy/inference/ExactInference.html#BeliefPropagationWithMessagePassing">PGMPY</a>. It's available <a href="https://pgmpy.org/_modules/pgmpy/inference/ExactInference.html#BeliefPropagationWithMessagePassing">here</a>.
-        </p>
+      <!-- ═══════════════════ MODELLING ═══════════════════ -->
+      <section id="modelling" class="section reveal">
+        <h2>I like modelling</h2>
 
-        <pre><code><span class="kw">class</span> <span class="cls">_RecursiveMessageSchedulingQuery</span>:
+        <div class="content-block">
+          <p>
+            Lastly, during my PhD at Cambridge I worked on a probabilistic graphical model of lung health to improve life expectancy and wellbeing in cystic fibrosis (<a href="https://drive.google.com/file/u/2/d/1KzY6G1w7RWFxa7MzYBQC_WszzzMhRmTT/view?usp=sharing">manuscript</a>). Whilst doing so I implemented a recursive version of the belief propagation algorithm that was 20x faster than current method on <a href="https://pgmpy.org/_modules/pgmpy/inference/ExactInference.html#BeliefPropagationWithMessagePassing">PGMPY</a>. It's available <a href="https://pgmpy.org/_modules/pgmpy/inference/ExactInference.html#BeliefPropagationWithMessagePassing">here</a>.
+          </p>
+
+          <pre><code><span class="kw">class</span> <span class="cls">_RecursiveMessageSchedulingQuery</span>:
 <span class="cm">    """Private class used in `BeliefPropagationWithMessagePassing.query()`</span>
 <span class="cm">    to efficiently manage the message scheduling across the different</span>
 <span class="cm">    queried variables, in a recursive way.</span>
 <span class="cm">    """</span></code></pre>
-      </div>
+        </div>
 
-      <div class="content-block reveal">
-        <p>
-          Previously, I did research in geodesic CNN to accelerate industrial R&D, which turned into a startup called <a href="https://www.neuralconcept.com/">Neural Concept</a>.
-        </p>
-      </div>
-    </section>
+        <div class="content-block reveal">
+          <p>
+            Previously, I did research in geodesic CNN to accelerate industrial R&D, which turned into a startup called <a href="https://www.neuralconcept.com/">Neural Concept</a>.
+          </p>
+        </div>
+      </section>
 
-    <!-- ═══════════════════ WRITING CODE ═══════════════════ -->
-    <section class="section reveal">
-      <h2>Writing code</h2>
+      <!-- ═══════════════════ WRITING CODE ═══════════════════ -->
+      <section id="code" class="section reveal">
+        <h2>I like writing code <span class="era">(pre AI era)</span></h2>
 
-      <div class="content-block">
-        <p>
-          From 2021 to 2022 I was writing code at <a href="https://gitstart.com/">Gitstart</a> (YC19). I journaled <a href="https://www.notion.so/tristantrebaol/Daily-Tristan-4bf8daf9da3b45b89b9145c863ca92c8?source=copy_link">my daily learnings</a> for a year and also shipped <a href="https://www.notion.so/tristantrebaol/Daily-Tristan-4bf8daf9da3b45b89b9145c863ca92c8?source=copy_link#dc2368fef3dd44d4826740b1eab03e6a">open-source contributions</a> in Elixir, Typescript, and Python.
-        </p>
+        <div class="content-block">
+          <p>
+            From 2021 to 2022 I was writing code at <a href="https://gitstart.com/">Gitstart</a> (YC19). I journaled <a href="https://www.notion.so/tristantrebaol/Daily-Tristan-4bf8daf9da3b45b89b9145c863ca92c8?source=copy_link">my daily learnings</a> for a year and also shipped <a href="https://www.notion.so/tristantrebaol/Daily-Tristan-4bf8daf9da3b45b89b9145c863ca92c8?source=copy_link#dc2368fef3dd44d4826740b1eab03e6a">open-source contributions</a> in Elixir, Typescript, and Python.
+          </p>
 
-        <figure class="photo reveal">
-          <img src="/images/gitpraise.png" alt="Gitpraise screenshot" loading="lazy" />
-        </figure>
-      </div>
-
-      <div class="content-block reveal">
-        <p>
-          I believe that <a href="https://www.notion.so/tristantrebaol/TDD-is-drastically-underrated-0fde747cad4b4a8c9a3b48187192ea92?source=copy_link">TDD is drastically underrated</a>. I also enjoyed reading: <em>The Missing README</em>, <em>The Pragmatic Engineer</em>, <em>Normal Accidents</em>.
-        </p>
-      </div>
-
-      <div class="content-block reveal">
-        <p>
-          I started coding in 2014 when I enrolled for CS50 (Harvard CS) with two high school friends.
-        </p>
-      </div>
-    </section>
-
-    <!-- ═══════════════════ BUILDING HARDWARE ═══════════════════ -->
-    <section class="section reveal">
-      <h2>Building hardware</h2>
-
-      <div class="content-block">
-        <p>
-          During my masters in computational science, I co-founded a <a href="https://www.epflspacecraftteam.ch/">space mission</a> from my kitchen table in Switzerland. We raised 2.5M CHF from the European Space Agency and launched two satellites in low earth orbit. I spoke about it on <a href="https://open.spotify.com/episode/06ThLys4c7i8pEowlWxvpR?si=c6652ddb1d0e4131">radio</a>, in an <a href="https://actu.epfl.ch/news/epfl-moves-boldly-into-space-with-its-chess-satell/">article</a>, and on <a href="https://youtu.be/OPOPqDzs0KE?t=133">video</a>. Team's efforts led to <a href="https://www.dphispace.com/">DPhi Space</a> spin-off. We ensure perenity of the project in an association of space enthusiasts which is still active. Next launch planned in October 2026.
-        </p>
-      </div>
-
-      <div class="content-block reveal">
-        <p>
-          In my EPFL student time, I would spend most of my time at the makerspace. For example, we built the <a href="https://www.youtube.com/watch?v=TFE88LYaePM">first RC bifoiler worldwide</a> (picture below). It was the fastest boat in the circuit history in the international student competition, and I was lucky enough to pilot a few races.
-        </p>
-
-        <figure class="photo">
-          <img src="/images/bifoiler.png" alt="The RC bifoiler — first of its kind" loading="lazy" />
-        </figure>
-      </div>
-
-      <div class="content-block reveal">
-        <p>
-          We also built a freight boat prototype that carried 200 kg of weight.
-        </p>
-        <figure class="photo">
-          <img src="/images/freight-boat.png" alt="Freight boat prototype" loading="lazy" />
-        </figure>
-      </div>
-
-      <div class="content-block reveal">
-        <p>
-          I also assembled a racing quadcopter importing all parts from China. My electronic nerd friend didn't tell me it was super over engineered. I limited it to 1% of the full power and it was finally controllable.
-        </p>
-        <DroneGallery />
-      </div>
-    </section>
-
-    <!-- ═══════════════════ CYSTIC FIBROSIS ═══════════════════ -->
-    <section class="section reveal">
-      <h2>Challenging myself to support cystic fibrosis</h2>
-      <p class="section-subtitle">with brother and friends</p>
-
-      <ul class="cf-timeline">
-        <li class="cf-timeline__item reveal">
-          <span class="cf-timeline__year">2023</span>
-          <span class="cf-timeline__desc">Half ironman with a group of friends</span>
-          <figure class="photo">
-            <img src="/images/half-ironman.png" alt="Half ironman group photo" loading="lazy" />
+          <figure class="photo reveal">
+            <img src="/images/gitpraise.png" alt="Gitpraise screenshot" loading="lazy" />
           </figure>
-        </li>
-        <li class="cf-timeline__item reveal">
-          <span class="cf-timeline__year">2021</span>
-          <span class="cf-timeline__desc">Swam across Lake Geneva from Lausanne to Evian</span>
+        </div>
+
+        <div class="content-block reveal">
+          <p>
+            I believe that <a href="https://www.notion.so/tristantrebaol/TDD-is-drastically-underrated-0fde747cad4b4a8c9a3b48187192ea92?source=copy_link">TDD is drastically underrated</a>. I also enjoyed reading: <em>The Missing README</em>, <em>The Pragmatic Engineer</em>, <em>Normal Accidents</em>.
+          </p>
+        </div>
+
+        <div class="content-block reveal">
+          <p>
+            I started coding in 2014 when I enrolled for CS50 (Harvard CS) with two high school friends.
+          </p>
+        </div>
+      </section>
+
+      <!-- ═══════════════════ BUILDING HARDWARE ═══════════════════ -->
+      <section id="hardware" class="section reveal">
+        <h2>I like building hardware <span class="era">(pre robotic era)</span></h2>
+
+        <div class="content-block">
+          <p>
+            Starting 2021, I co-founded a <a href="https://www.epflspacecraftteam.ch/">space mission</a> from my kitchen table in Switzerland. We raised 2.5M CHF from the European Space Agency and launched two satellites in low earth orbit. I spoke about it on <a href="https://open.spotify.com/episode/06ThLys4c7i8pEowlWxvpR?si=c6652ddb1d0e4131">radio</a>, in an <a href="https://actu.epfl.ch/news/epfl-moves-boldly-into-space-with-its-chess-satell/">article</a>, and on <a href="https://youtu.be/OPOPqDzs0KE?t=133">video</a>. Team's efforts led to <a href="https://www.dphispace.com/">DPhi Space</a> spin-off. We ensure perenity of the project in an association of space enthusiasts which is still active. Next launch planned in October 2026.
+          </p>
+        </div>
+
+        <div class="content-block reveal">
+          <p>
+            In my EPFL student time (2015-2017), I would spend most of my time at the makerspace. For example, we built the <a href="https://www.youtube.com/watch?v=TFE88LYaePM">first RC bifoiler worldwide</a> (picture below). It was the fastest boat in the circuit history in the international student competition, and I was lucky enough to pilot a few races.
+          </p>
+
           <figure class="photo">
-            <img src="/images/lake-leman.jpg" alt="Swimming across Lake Geneva" loading="lazy" />
+            <img src="/images/bifoiler.png" alt="The RC bifoiler — first of its kind" loading="lazy" />
           </figure>
-        </li>
-        <li class="cf-timeline__item reveal">
-          <span class="cf-timeline__year">2018</span>
-          <span class="cf-timeline__desc">Ran an ironman with my brother — second place for my age category</span>
-        </li>
-        <li class="cf-timeline__item reveal">
-          <span class="cf-timeline__year">2015</span>
-          <span class="cf-timeline__desc">7th and 9th at Victoria Peak trail with my brother, Hong Kong</span>
-        </li>
-      </ul>
-    </section>
+        </div>
 
-    <!-- ═══════════════════ SAILING ═══════════════════ -->
-    <section class="section reveal">
-      <h2>Sailing</h2>
+        <div class="content-block reveal">
+          <p>
+            We also built a freight boat prototype that carried 200 kg of weight.
+          </p>
+          <figure class="photo">
+            <img src="/images/freight-boat.png" alt="Freight boat prototype" loading="lazy" />
+          </figure>
+        </div>
 
-      <div class="content-block">
-        <p>
-          I grew up in Brittany, France, where I spent my free time sailing competitively. By the time I was 15, I had accumulated 10,000 hours which led me to win two world championship titles with my brother in pre-olympic series (<a href="https://www.ouest-france.fr/bretagne/vannes-56000/les-freres-trebaol-champions-du-monde-de-catamaran-724483">article</a>).
-        </p>
+        <div class="content-block reveal">
+          <p>
+            I also assembled a racing quadcopter importing all parts from China. My electronic nerd friend didn't tell me it was super over engineered. I limited it to 1% of the full power and it was finally controllable.
+          </p>
+          <DroneGallery />
+        </div>
+      </section>
 
-        <figure class="photo">
-          <img src="/images/sailing-catamaran.png" alt="Sailing on a foiling catamaran" loading="lazy" />
-        </figure>
-      </div>
+      <!-- ═══════════════════ CYSTIC FIBROSIS ═══════════════════ -->
+      <section id="cf" class="section reveal">
+        <h2>I like challenging myself to support cystic fibrosis</h2>
+        <p class="section-subtitle">with brother and friends</p>
 
-      <div class="content-block reveal">
-        <p>
-          In 2015 I was invited to the French chapter of the <a href="https://www.youtube.com/watch?v=SU0NPu0ALFA&pp=ygUoZnJhbmNlIGZpbmFsZSByZWRidWxsIGZvaWxpbmcgZ2VuZXJhdGlvbtIHCQnZCgGHKiGM7w%3D%3D">Red Bull Foiling Generation</a>. It taught me <a href="https://www.youtube.com/watch?v=2Baj4WSFOm4">the hard way</a> how to sail on foiling catamaran. I then joined Realteam, Tixwave and raced against Alinghi in Lake Geneva on ETF26 and 69F, coached and skippered the Cambridge crew in the UK university nationals.
-        </p>
-      </div>
-    </section>
+        <ul class="cf-timeline">
+          <li class="cf-timeline__item reveal">
+            <span class="cf-timeline__year">2023</span>
+            <span class="cf-timeline__desc">Half ironman with a group of friends</span>
+            <figure class="photo">
+              <img src="/images/half-ironman.png" alt="Half ironman group photo" loading="lazy" />
+            </figure>
+          </li>
+          <li class="cf-timeline__item reveal">
+            <span class="cf-timeline__year">2021</span>
+            <span class="cf-timeline__desc">Swam across Lake Geneva from Lausanne to Evian</span>
+            <figure class="photo">
+              <img src="/images/lake-leman.jpg" alt="Swimming across Lake Geneva" loading="lazy" />
+            </figure>
+          </li>
+          <li class="cf-timeline__item reveal">
+            <span class="cf-timeline__year">2018</span>
+            <span class="cf-timeline__desc">Ran an ironman with my brother — second place for my age category</span>
+          </li>
+          <li class="cf-timeline__item reveal">
+            <span class="cf-timeline__year">2015</span>
+            <span class="cf-timeline__desc">7th and 9th at Victoria Peak trail with my brother, Hong Kong</span>
+          </li>
+        </ul>
+      </section>
 
-    <!-- ═══════════════════ FOOTER ═══════════════════ -->
-    <footer class="footer reveal">
-      <div class="footer__cta">say hi</div>
-      <nav class="footer__links">
-        <a href="mailto:tristan@trebaol.com">tristan@trebaol.com</a>
-        <span class="footer__dot">&middot;</span>
-        <a href="https://github.com/tristantreb" target="_blank" rel="noopener noreferrer">github</a>
-        <span class="footer__dot">&middot;</span>
-        <a href="https://www.linkedin.com/in/tristan-trebaol/" target="_blank" rel="noopener noreferrer">linkedin</a>
-      </nav>
-    </footer>
-  </main>
+      <!-- ═══════════════════ SAILING ═══════════════════ -->
+      <section id="sailing" class="section reveal">
+        <h2>I like sailing</h2>
+
+        <div class="content-block">
+          <p>
+            I grew up in Brittany, France, where I spent my free time sailing competitively. By the time I was 15, I had accumulated 10,000 hours which led me to win two world championship titles with my brother in pre-olympic series (<a href="https://www.ouest-france.fr/bretagne/vannes-56000/les-freres-trebaol-champions-du-monde-de-catamaran-724483">article</a>).
+          </p>
+
+          <figure class="photo">
+            <img src="/images/sailing-catamaran.png" alt="Sailing on a foiling catamaran" loading="lazy" />
+          </figure>
+        </div>
+
+        <div class="content-block reveal">
+          <p>
+            In 2015 I was invited to the French chapter of the <a href="https://www.youtube.com/watch?v=SU0NPu0ALFA&pp=ygUoZnJhbmNlIGZpbmFsZSByZWRidWxsIGZvaWxpbmcgZ2VuZXJhdGlvbtIHCQnZCgGHKiGM7w%3D%3D">Red Bull Foiling Generation</a>. It taught me <a href="https://www.youtube.com/watch?v=2Baj4WSFOm4">the hard way</a> how to sail on foiling catamaran. I then joined Realteam, Tixwave and raced against Alinghi in Lake Geneva on ETF26 and 69F, coached and skippered the Cambridge crew in the UK university nationals.
+          </p>
+        </div>
+      </section>
+
+      <!-- ═══════════════════ FOOTER ═══════════════════ -->
+      <footer class="footer reveal">
+        <div class="footer__cta">say hi</div>
+        <nav class="footer__links">
+          <a href="mailto:tristan@trebaol.com">tristan@trebaol.com</a>
+          <span class="footer__dot">&middot;</span>
+          <a href="https://github.com/tristantreb" target="_blank" rel="noopener noreferrer">github</a>
+          <span class="footer__dot">&middot;</span>
+          <a href="https://www.linkedin.com/in/tristan-trebaol/" target="_blank" rel="noopener noreferrer">linkedin</a>
+        </nav>
+      </footer>
+    </main>
+  </div>
 </BaseLayout>
 
 <style>
+  /* ── Page layout with TOC ── */
+  .page-layout {
+    display: flex;
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 var(--space-sm);
+  }
+
+  /* ── Table of Contents ── */
+  .toc {
+    position: sticky;
+    top: var(--space-lg);
+    align-self: flex-start;
+    width: 180px;
+    flex-shrink: 0;
+    padding-top: 5.5rem;
+  }
+
+  .toc ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .toc__link {
+    font-size: 0.78rem;
+    color: var(--color-text-lighter);
+    text-decoration: none;
+    border-bottom: none;
+    line-height: 1.35;
+    display: block;
+    padding: 0.15em 0;
+    transition: color 0.2s ease;
+  }
+
+  .toc__link:hover {
+    color: var(--color-text);
+    border-bottom: none;
+  }
+
+  .toc__link.active {
+    color: var(--color-accent);
+    font-weight: 500;
+  }
+
   main {
     max-width: var(--measure);
-    margin: 0 auto;
-    padding: var(--space-lg) var(--space-sm) var(--space-xl);
+    flex: 1;
+    min-width: 0;
+    padding: var(--space-lg) 0 var(--space-xl) var(--space-md);
   }
 
   /* ── Header ── */
@@ -186,11 +246,21 @@ import DroneGallery from '../components/DroneGallery.astro';
     margin-bottom: var(--space-xs);
   }
 
+  /* ── Era parenthetical ── */
+  .era {
+    font-size: 0.65em;
+    font-weight: 400;
+    color: var(--color-text-lighter);
+    font-family: var(--font-body);
+    font-style: italic;
+  }
+
   /* ── Sections ── */
   .section {
     margin-bottom: var(--space-xl);
     padding-top: var(--space-sm);
     border-top: 1px solid var(--color-card-border);
+    scroll-margin-top: var(--space-md);
   }
 
   .section-subtitle {
@@ -295,8 +365,26 @@ import DroneGallery from '../components/DroneGallery.astro';
 
   /* ── Responsive ── */
   @media (max-width: 720px) {
+    .page-layout {
+      flex-direction: column;
+    }
+
+    .toc {
+      position: static;
+      width: 100%;
+      padding-top: var(--space-md);
+      padding-bottom: var(--space-sm);
+      border-bottom: 1px solid var(--color-card-border);
+    }
+
+    .toc ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 0.3rem 0.8rem;
+    }
+
     main {
-      padding: var(--space-md) var(--space-xs) var(--space-lg);
+      padding: var(--space-md) 0 var(--space-lg);
     }
 
     .header {
@@ -321,3 +409,25 @@ import DroneGallery from '../components/DroneGallery.astro';
     }
   }
 </style>
+
+<script>
+  // Highlight active TOC link on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const tocLinks = document.querySelectorAll('.toc__link');
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const id = entry.target.getAttribute('id');
+        const link = document.querySelector(`.toc__link[href="#${id}"]`);
+        if (entry.isIntersecting) {
+          tocLinks.forEach((l) => l.classList.remove('active'));
+          link?.classList.add('active');
+        }
+      });
+    },
+    { threshold: 0.2, rootMargin: '-10% 0px -70% 0px' }
+  );
+
+  sections.forEach((section) => observer.observe(section));
+</script>
