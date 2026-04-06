@@ -36,8 +36,9 @@ const images = [
   .drone-gallery__item img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    transition: transform 0.45s cubic-bezier(0.25, 0.1, 0.25, 1);
+    object-fit: contain;
+    object-position: center;
+    background: var(--color-card-bg, #f0efe9);
   }
 
   .drone-gallery:hover .drone-gallery__item {
@@ -46,10 +47,6 @@ const images = [
 
   .drone-gallery .drone-gallery__item:hover {
     flex: 3;
-  }
-
-  .drone-gallery__item:hover img {
-    transform: scale(1.03);
   }
 
   /* Mobile: horizontal scroll */
