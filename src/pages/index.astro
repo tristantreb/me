@@ -39,10 +39,10 @@ import DroneGallery from '../components/DroneGallery.astro';
             My research interests lie broadly at the intersection of machine learning and physics.
           </p>
           <p>
-            During my PhD, I developed a probabilistic graphical model of lung health to improve wellbeing and life expectancy in cystic fibrosis (<a href="https://drive.google.com/file/u/2/d/1KzY6G1w7RWFxa7MzYBQC_WszzzMhRmTT/view?usp=sharing">manuscript</a>). I was supervised by Dr. John Winn (Microsoft Research) and Prof. Andres Floto (Cambridge University).
+            During my PhD, I developed a probabilistic graphical model of lung health to improve wellbeing and life expectancy in cystic fibrosis. I was supervised by Dr. John Winn (Microsoft Research) and Prof. Andres Floto (Cambridge University).
           </p>
           <p>
-            I did a research project in collaboration with <a href="https://www.neuralconcept.com/">Neural Concept</a>, a spin-off of the EPFL Computer Vision Laboratory, to train a Geodesic CNN model. It has since been formally licensed for commercial application to accelerate industrial R&D.
+            At the EPFL CV Lab, in collaboration with <a href="https://www.neuralconcept.com/">Neural Concept</a>, I trained a geodesic CNN that emulates hydrofoil physics 3,000x faster than traditional simulation software. This work has since been formally licensed for commercial use to accelerate industrial R&D.
           </p>
           <p>
             More recently, I studied protein language models, scaling transformers, and JEPA architectures.
@@ -69,7 +69,9 @@ import DroneGallery from '../components/DroneGallery.astro';
           </p>
 
           <figure class="photo reveal">
-            <img src="/images/git.png" alt="Git contributions" loading="lazy" />
+            <a href="https://github.com/tristantreb" target="_blank" rel="noopener noreferrer" class="git-heatmap">
+              <img src="/images/git.png" alt="Git contributions" loading="lazy" />
+            </a>
           </figure>
         </div>
 
@@ -92,7 +94,7 @@ import DroneGallery from '../components/DroneGallery.astro';
 
         <div class="content-block">
           <p>
-            In 2018, I co-founded a <a href="https://www.epflspacecraftteam.ch/">space mission</a> from my kitchen table in Switzerland. We raised 2.5M CHF from the European Space Agency and successfully launched two satellites into Low Earth Orbit. I spoke about it on <a href="https://open.spotify.com/episode/06ThLys4c7i8pEowlWxvpR?si=c6652ddb1d0e4131">radio</a>, in <a href="https://actu.epfl.ch/news/epfl-moves-boldly-into-space-with-its-chess-satell/">print</a>, and on <a href="https://youtu.be/OPOPqDzs0KE?t=133">video</a>. The team's efforts led to the <a href="https://www.dphispace.com/">DPhi Space</a> spin-off. To ensure the project's long-term legacy, we established an association of space enthusiasts that remains active today. The next launch is scheduled for October 2026.
+            In 2018, I co-founded a <a href="https://www.epflspacecraftteam.ch/">space mission</a> from my kitchen table in Switzerland. We raised 2.5M CHF from the European Space Agency and successfully launched two satellites into Low Earth Orbit. I spoke about it on <a href="https://open.spotify.com/episode/06ThLys4c7i8pEowlWxvpR?si=c6652ddb1d0e4131">radio</a>, in <a href="https://actu.epfl.ch/news/epfl-moves-boldly-into-space-with-its-chess-satell/">print</a>, and on <a href="https://youtu.be/OPOPqDzs0KE?t=133">video</a>. The team's efforts led to the <a href="https://www.dphispace.com/">DPhi Space</a> spin-off. To ensure the project's long-term legacy, we established an association of space enthusiasts that remains active today. The next launch is scheduled for October 2027.
           </p>
         </div>
 
@@ -360,6 +362,34 @@ import DroneGallery from '../components/DroneGallery.astro';
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
     border-color: var(--color-text-lighter);
     border-bottom-color: var(--color-text-lighter);
+  }
+
+  figure:has(.git-heatmap) {
+    overflow: visible;
+    border: none;
+    padding-top: var(--space-xs);
+  }
+
+  .git-heatmap {
+    display: block;
+    border: 1px solid var(--color-card-border);
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .git-heatmap:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    border-color: var(--color-text-lighter);
+  }
+
+  .git-heatmap img {
+    width: 100%;
+    display: block;
+    padding: 5px;
   }
 
   .manuscript-preview img {
