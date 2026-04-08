@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import DroneGallery from '../components/DroneGallery.astro';
-const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout title="Tristan Trébaol">
@@ -25,7 +24,7 @@ const base = import.meta.env.BASE_URL;
       </header>
 
       <figure class="photo hero-photo reveal">
-        <img src={`${base}/images/realteam.png`} alt="Realteam sailing" loading="eager" />
+        <img src={`/images/realteam.png`} alt="Realteam sailing" loading="eager" />
       </figure>
 
       <!-- ═══════════════════ MODELLING ═══════════════════ -->
@@ -34,7 +33,7 @@ const base = import.meta.env.BASE_URL;
 
         <div class="content-block content-block--wrap">
           <a href="https://drive.google.com/file/u/2/d/1KzY6G1w7RWFxa7MzYBQC_WszzzMhRmTT/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="manuscript-preview">
-            <img src={`${base}/images/manuscript.png`} alt="Manuscript first page preview" />
+            <img src={`/images/manuscript.png`} alt="Manuscript first page preview" />
           </a>
           <p>
             My research interests lie broadly at the intersection of machine learning and physics.
@@ -71,7 +70,7 @@ const base = import.meta.env.BASE_URL;
 
           <figure class="photo reveal">
             <a href="https://github.com/tristantreb" target="_blank" rel="noopener noreferrer" class="git-heatmap">
-              <img src={`${base}/images/git.png`} alt="Git contributions" loading="lazy" />
+              <img src={`/images/git.png`} alt="Git contributions" loading="lazy" />
             </a>
           </figure>
         </div>
@@ -105,7 +104,7 @@ const base = import.meta.env.BASE_URL;
           </p>
 
           <figure class="photo">
-            <img src={`${base}/images/bifoiler.png`} alt="The RC bifoiler — first of its kind" loading="lazy" />
+            <img src={`/images/bifoiler.png`} alt="The RC bifoiler — first of its kind" loading="lazy" />
           </figure>
         </div>
 
@@ -114,7 +113,7 @@ const base = import.meta.env.BASE_URL;
             We also built a freight boat prototype that carried 200 kg of weight. It won the contest in the heavyweight category.
           </p>
           <figure class="photo">
-            <img src={`${base}/images/freight-boat.png`} alt="Freight boat prototype" loading="lazy" />
+            <img src={`/images/freight-boat.png`} alt="Freight boat prototype" loading="lazy" />
           </figure>
         </div>
 
@@ -147,7 +146,7 @@ const base = import.meta.env.BASE_URL;
         </ul>
 
         <figure class="photo reveal">
-          <img src={`${base}/images/half-ironman.png`} alt="Half ironman group photo" loading="lazy" />
+          <img src={`/images/half-ironman.png`} alt="Half ironman group photo" loading="lazy" />
         </figure>
       </section>
 
@@ -161,7 +160,7 @@ const base = import.meta.env.BASE_URL;
           </p>
 
           <figure class="photo">
-            <img src={`${base}/images/sailing-catamaran.png`} alt="Sailing on a foiling catamaran" loading="lazy" />
+            <img src={`/images/sailing-catamaran.png`} alt="Sailing on a foiling catamaran" loading="lazy" />
           </figure>
         </div>
 
